@@ -3,7 +3,7 @@
         <title>Komendy RacuchBOT</title>
         <style>
             body {
-                background-color: #373737;
+                background-color: #272727;
             }
             h2 {
                 color: #5D3FD3;
@@ -15,6 +15,11 @@
             li {
                 color: whitesmoke;
                 font-family: 'Segoe UI', -apple-system;
+                background: linear-gradient(
+                to right, #5d3fd3, #da70d6,
+                 #cf9fff);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
             }
             .subcategory {
                 list-style-type: square;
@@ -33,7 +38,7 @@
         <li class="subcategory">INFORMACJE</li>
         <ul>
             <li>$chatters &lt;nickname&gt; - sprawdza ilość osób połączonych z czatem </li>
-            <li>$follow | $follow &lt;nick1&gt; &lt;nick2&gt; - sprawdza czy 1 </li>
+            <li>$follow | $follow &lt;nick1&gt; &lt;nick2&gt; - sprawdza czy 1 followuje drugiego, w przypadku braku nicków sprawdza czy followujesz osobę u której wpisano komendę </li>
             <li>$viewers &lt;nickname&gt; - sprawdza ilu widzów ma streamer</li>
             <li>$watchtime &lt;nick_widza&gt; &lt;nick_streamera&gt; - sprawdza ile czasu widz spędził u streamera (działają tylko ci z bazy xayo.pl)</li>
         </ul>
