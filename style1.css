@@ -1,0 +1,45 @@
+.screenshots {
+    width: 50%;
+    height: 400px;
+    margin-top: 10px;
+    margin-left: 10px
+}
+.ss {
+    float: left;
+    max-height: 400px;
+    height: auto;
+    max-width: 50%;
+    width: auto;
+}
+.topbar {
+    background-color: #424245;
+    color: #f5f5f7;
+    width: 100%;
+    height: 48px;
+    clear: both;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 12px;
+    line-height: 3.66667;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+h2 {
+    margin-left: 10px;
+}
+body {
+    margin: 0;
+    background-color: #333;
+    color: whitesmoke;
+}
+a {
+    font-family: 'SF Pro Text',"Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica";
+    font-size: 22px;
+    color: blue;
+    clear: both;
+}
+.logo {
+    margin-left: 10px;
+}
+h3 {
+    color: whitesmoke;
+}

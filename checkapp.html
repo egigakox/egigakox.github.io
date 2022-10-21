@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style1.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="topbar">
+            <h2>Check if your favourite app exists in Apple's AppStore</h2>
+            
+        </div>
+        Type App Name<input type="text" id="name">
+        <input type="submit" value="Check if exists" id="submit">
+        <div id="results"></div>
+    </body>
+    <script type="text/javascript">
+        let button = document.getElementById("submit");
+        let result = document.getElementById("results");
+
+        button.addEventListener("click", () => { 
+            let appname = document.getElementById("name").value;
+            let url = "https://itunes.apple.com/search?term=";
+            
+            fetch(url+appname+"&entity=software")
+            .then((response) => response.json())
+            .then((data) => result.innerHTML=`<img src='${data.results[0].artworkUrl60}' alt='app-logo' class='logo'> <a href='${data.results[0].trackViewUrl}'>${data.results[0].trackCensoredName}</a> <div class='screenshots'>
+                <h3>App Screenshots</h3>
+                <img src='${data.results[0].screenshotUrls[0]}' alt='screenshots' class='ss'>
+                <img src='${data.results[0].screenshotUrls[1]}' alt='screenshots' class='ss'>
+                </div>`)
+        })
+    </script>
+</html>
