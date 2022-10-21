@@ -23,7 +23,7 @@
             
             fetch(url+appname+"&entity=software")
             .then((response) => response.json())
-            .then((data) => result.innerHTML=`<img src='${data.results[0].artworkUrl60}' alt='app-logo' class='logo'> <a href='${data.results[0].trackViewUrl}'>${data.results[0].trackCensoredName}' target='_blank'</a> <div class='screenshots'>
+            .then((data) => result.innerHTML=`<img src='${data.results[0].artworkUrl60}' alt='app-logo' class='logo'> <a href='${data.results[0].trackViewUrl} target='_blank'>${data.results[0].trackCensoredName}</a> <div class='screenshots'>
                 <h3>App Screenshots</h3>
                 <img src='${data.results[0].screenshotUrls[0]}' alt='screenshots' class='ss'>
                 <img src='${data.results[0].screenshotUrls[1]}' alt='screenshots' class='ss'>
