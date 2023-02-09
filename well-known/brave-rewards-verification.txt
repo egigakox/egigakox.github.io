@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: grzechu3o3.github.io
+Token: 4194b27261402c2a78498f21da4a25d6232e895f728e81639f9cf65924df6aee
